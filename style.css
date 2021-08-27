@@ -49,6 +49,7 @@
         width: 63%;
     }
     .left_container .left_content img{
+        object-fit: fill;
         margin-bottom: 10px;
     }
     .left_container .right_content h4{
@@ -69,7 +70,9 @@
             margin-right: 20px;
             border: none;
             border:1px solid #ffd800;
+            border-radius: 5px;
             background-color: transparent;
+            width: 114px;
     }
     .left_container .right_content .order_cta button a{
         color: #000000;
@@ -101,4 +104,56 @@
     background-color: #ffd800;
     color: #000000;
     cursor: pointer;
+}
+@media(max-width:1050px){
+    .left_container{
+        width: 63%;
+    }
+}
+@media(max-width:992px){
+    .left_container{
+        width: 80%;
+    }
+}
+@media(max-width:768px){
+    .left_container{
+        flex-direction: column;
+     }
+     .left_container .right_content{
+        margin-top: 20px;
+    }
+    .left_container .right_content .rating_cta span{
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+@media(max-width:375px){
+    .left_container{
+        flex-direction: column;
+     }
+     .left_container .right_content{
+        margin-top: 20px;
+    }
+    .left_container .right_content .order_cta button:nth-child(1){
+        margin-bottom: 20px;
+     }
+    .left_container .right_content .rating_cta span{
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+@media(max-width:360px){
+    .left_container .right_content{
+        margin-top: 20px;
+    }
+    .left_container .right_content .order_cta button:nth-child(1){
+       margin-bottom: 20px;
+    }
+    .left_container .right_content .rating_cta span{
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+    }
 }
