@@ -11,23 +11,94 @@
         transition: .2s linear;
     }
 
-    .order-container{
+    .order_container{
         max-width: 1040px;
         margin: 40px auto;
     }
     .order_history_container{
         width: 100%;
+        border: 1px solid #e2e2e2;
+        
     }
     .top_history_container{
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid #e2e2e2;
+        padding: 10px 20px;
+        background-color: #f5f5f5;
     }
     .top_left{
         display: flex;
     }
-    .top_left p{
-        margin-right:30px;
+    .top_left p span, .top_right p span{
+        color: rgb(39, 168, 39);
+        font-size: 16px;
     }
-    .top_left p{
-        margin-right:30px;
+    .top_left p, .top_right p, .left_container .left_content p {
+        font-size: 14px;
     }
+    .bottom_history_container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding:20px;
+    }
+    .left_container{
+        display: flex;
+        justify-content: space-between;
+        width: 63%;
+    }
+    .left_container .left_content img{
+        margin-bottom: 10px;
+    }
+    .left_container .right_content h4{
+        font-size: 20px;
+        word-break: keep-all;
+    }
+    .left_container .right_content > p,.left_container .right_content h4{
+        margin-bottom: 10px;
+    }
+    .left_container .left_content p span{
+        font-size: 16px;
+    }
+    .left_container .left_content small{
+        font-size: 10px;
+    }
+    .left_container .right_content .order_cta button{
+            padding: 10px 20px;
+            margin-right: 20px;
+            border: none;
+            border:1px solid #ffd800;
+            background-color: transparent;
+    }
+    .left_container .right_content .order_cta button a{
+        color: #000000;
+}
+.left_container .right_content .order_cta button:hover{
+    border:1px solid #ffd800;
+    background-color: #ffd800;
+}
+.bottom_history_container .right_container .top_right{
+    border-bottom: 1px solid #e2e2e2;
+    text-align: end;
+    padding-bottom: 20px;
+}
+.bottom_history_container .right_container .bottom_right{
+    text-align: end;
+    padding-top: 20px;
+}
+.left_container .right_content .rating_cta{
+    margin-top: 10px;
+}
+.left_container .right_content .rating_cta i{
+    margin-right: 15px;
+    border: 1px solid #ffd800;
+    padding: 6px;
+    border-radius: 50%;
+    color: #ffd800;
+}
+.left_container .right_content .rating_cta i:hover{
+    background-color: #ffd800;
+    color: #000000;
+    cursor: pointer;
+}
